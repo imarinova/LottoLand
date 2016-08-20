@@ -1,0 +1,39 @@
+{
+  "name": "lottoland",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "irina marinova",
+  "license": "ISC",
+  "browser": {
+    "_date": "./lib/underscore.date.js"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "_date": {
+      "exports": "_date"
+    }
+  },
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "browserify": "^13.1.0",
+    "browserify-shim": "^3.8.12",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "jquery": "^3.1.0",
+    "underscore": "^1.8.3",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}
